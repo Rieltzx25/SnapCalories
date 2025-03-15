@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Histori Makanan</h2>
+{% if history %}
+    <ul>
+        {% for entry in history %}
+            <li>{{ entry.date.strftime("%d %b %Y %H:%M") }} - {{ entry.food_name }}: {{ entry.calories }} kkal</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Belum ada data histori.</p>
+{% endif %}
+{% endblock %}
