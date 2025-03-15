@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Hitung Kalori Harian</h2>
+<form method="POST">
+    <label>Berat Badan (kg):</label><br>
+    <input type="text" name="weight"><br><br>
+    <label>Tinggi Badan (cm):</label><br>
+    <input type="text" name="height"><br><br>
+    <label>Umur (tahun):</label><br>
+    <input type="text" name="age"><br><br>
+    <input type="submit" value="Hitung">
+</form>
+{% endblock %}
